@@ -3,7 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
 }
 
 body {
@@ -20,12 +19,15 @@ body {
 .presentacion {
     display: flex;
     align-items: center;
-    margin: 10%;
+    margin: 5%; /* En el curso esta propiedad usaba los valores 10% 15% pero en mi monitor perdía simetría */
     justify-content: space-between;
 }
 
 .presentacion__contenido{
     width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .presentacion__contenido__titulo {
