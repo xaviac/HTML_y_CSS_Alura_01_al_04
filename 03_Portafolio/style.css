@@ -72,4 +72,8 @@ body {
 
 .presentacion__enlaces__link:hover {
     background-color: #272727;
+    width: 416px;
+    gap: 20px;
+    font-size: 29px;
+    cursor: pointer;
 }
