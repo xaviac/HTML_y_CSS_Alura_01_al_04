@@ -55,6 +55,9 @@ body {
 }
 
 .presentacion__enlaces__link {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
     color: #f6f6f6;
     border: 2px solid #22d4fd;
     width: 378px;
