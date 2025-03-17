@@ -1,13 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Variables
+
+    Variables del proyecto original
+    --color-primario: #000;
+    --color-secundario: #f6f6f6;
+    --color-terciario: #22d4fd;
+    --color-hover: #272727;
+
+    Varibles alternativas 1
+    --color-primario: #27445D;
+    --color-secundario: #497D74;
+    --color-terciario: #71BBB2;
+    --color-hover: #EFE9D5;
+
+    Variables alternativas 2
+    --color-primario: #5C7285;
+    --color-secundario: #818C78;
+    --color-terciario: #A7B49E;
+    --color-hover: #E2E0C8;
+*/
+
+
+
+:root {
+    /*  */
+    --color-primario: #5C7285;
+    --color-secundario: #818C78;
+    --color-terciario: #A7B49E;
+    --color-hover: #E2E0C8;
+
+    --fuente-krona-one: 'Krona One', sans-serif;
+    --fuente-montserrat: 'Montserrat', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: #000;
-    color: #f6f6f6;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
     /* height: 100vh; */
     box-sizing: border-box;
 }
@@ -22,17 +56,17 @@ body {
 }
 
 .header__menu__link {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fuente-montserrat);
     font-size: 24px;
     font-weight: 600;
-    color: #22d4fd;
+    color: var(--color-terciario);
     text-decoration: none;
 }
 
 .presentacion {
     display: flex;
     align-items: center;
-    padding: 5%; /* En el curso esta propiedad usaba los valores 10% 15% pero en mi monitor perdía simetría */
+    padding: 5%;
     justify-content: space-between;
 }
 
@@ -45,16 +79,16 @@ body {
 
 .presentacion__contenido__titulo {
     font-size: 36px;
-    font-family: 'Krona One', sans-serif;    
+    font-family: var(--fuente-krona-one);    
 }
 
 .titulo-destaque {
-    color: #22d4fd;
+    color: var(--color-terciario);
 }
 
 .presentacion__contenido__texto {
     font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fuente-montserrat);
 }
 
 .presentacion__enlaces {
@@ -66,7 +100,7 @@ body {
 }
 
 .presentacion__enlaces__subtitulo {
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--fuente-krona-one);
     font-size: 24px;
     font-weight: 400;
 }
@@ -75,20 +109,20 @@ body {
     display: flex;
     justify-content: center;
     gap: 10px;
-    color: #f6f6f6;
-    border: 2px solid #22d4fd;
+    color: var(--color-secundario);
+    border: 2px solid var(--color-terciario);
     width: 378px;
     border-radius: 8px;
     text-align: center;
     padding: 21.5px 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fuente-montserrat);
     font-size: 24px;
     font-weight: 600;
     text-decoration: none;
 }
 
 .presentacion__enlaces__link:hover {
-    background-color: #272727;
+    background-color: var(--color-hover);
     width: 416px;
     gap: 20px;
     font-size: 29px;
@@ -96,16 +130,11 @@ body {
 }
 
 .footer {
-    background-color: #22d4fd;
+    background-color: var(--color-terciario);
     padding: 24px;
-    color: #000;
+    color: var(--color-primario);
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fuente-montserrat);
     font-size: 24px;
     font-weight: 400;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-top: 20px; */
 }
