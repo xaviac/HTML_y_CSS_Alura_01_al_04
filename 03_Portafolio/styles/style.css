@@ -19,16 +19,33 @@
     --color-secundario: #818C78;
     --color-terciario: #A7B49E;
     --color-hover: #E2E0C8;
+
+
+    --color-primario: #996371;
+    --color-secundario: #ffa5be;
+    --color-terciario: #cc8497;
+    --color-hover: #e8cbe1;
+
+    --color-primario: #ffa5be;
+    --color-secundario: #996371;
+    --color-terciario: #cc8497;
+    --color-hover: #e8cbe1;
+
+    
 */
 
 
 
 :root {
     /*  */
-    --color-primario: #5C7285;
+    /* --color-primario: #5C7285;
     --color-secundario: #818C78;
     --color-terciario: #A7B49E;
-    --color-hover: #E2E0C8;
+    --color-hover: #E2E0C8; */
+    --color-primario: #ffa5be;
+    --color-secundario: #996371;
+    --color-terciario: #cc8497;
+    --color-hover: #e8cbe1;
 
     --fuente-krona-one: 'Krona One', sans-serif;
     --fuente-montserrat: 'Montserrat', sans-serif;
